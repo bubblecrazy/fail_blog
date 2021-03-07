@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>blog编辑</h1>
+    <form action="">
+        {{form.hidden_tag()}}
+        <p>{{form.body.label}}</p>
+        {{form.body()}}
+        {{form.submit()}}
+        {{ pagedown.include_pagedown() }}
+    </form>
+{% endblock %}
